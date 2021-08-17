@@ -2,4 +2,4 @@
 
 Kevin Powell's Conquering Responsive Layouts course final challenge.
 
-A mobile-first responsive website design.
+A mobile-first responsive website design made with Sass
