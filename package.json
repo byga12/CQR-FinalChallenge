@@ -1,0 +1,12 @@
+{
+  "name": "zfinal-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassW": "sass --watch ./sass/input.sass:./sass/output.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

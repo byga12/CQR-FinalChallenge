@@ -1,0 +1,187 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #3B4050;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5vw 0;
+}
+
+.nav {
+  background: #2E323F;
+  color: #DDD;
+  font-weight: bold;
+}
+.nav .container {
+  padding: 0.8rem 0;
+}
+
+.nav__logo {
+  text-align: center;
+}
+
+.nav__pages {
+  margin: 1.3rem;
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+.nav__pages li {
+  margin: 0.5rem;
+}
+
+.hero {
+  background: #3B4050;
+  color: #DDD;
+}
+
+.hero__title {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin: 0.5em 0;
+}
+
+.hero__content {
+  font-size: 1.3rem;
+}
+
+.hero__description {
+  margin-bottom: 2em;
+}
+
+.features {
+  background: #DDD;
+}
+
+.main {
+  background: #FFF;
+}
+
+.main__aside__item {
+  margin: 2rem 0;
+  padding: 2rem;
+  text-align: center;
+  color: #DDD;
+  background: #3B4050;
+}
+
+.footer {
+  background: #3B4050;
+  color: #DDD;
+}
+
+.footer__title {
+  font-size: 3rem;
+  line-height: 1em;
+  margin: 0.7em 0;
+}
+
+.footer__content__item {
+  font-family: "Montserrat", sans-serif;
+  margin: 3em 0;
+}
+.footer__content__item h3 {
+  margin: 1em 0;
+  color: #A59678;
+}
+.footer__content__item li {
+  margin: 1em 0;
+}
+
+.is-highlighted {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  display: inline;
+  background: #A59678;
+  padding: 0.2em 1.3em;
+  border-radius: 100px;
+}
+
+.is-golden {
+  color: #A59678;
+}
+
+@media (min-width: 700px) {
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+  }
+
+  .nav__pages {
+    margin: 0;
+  }
+
+  .hero .flex {
+    gap: 2rem;
+  }
+  .hero .hero__title {
+    font-size: 5.625rem;
+    line-height: 1em;
+    width: 50%;
+  }
+  .hero .hero__content {
+    width: 40%;
+  }
+
+  .features__item {
+    text-align: center;
+  }
+
+  .main__aside {
+    display: flex;
+    gap: 1em;
+  }
+
+  .footer__title {
+    text-align: center;
+  }
+
+  .footer__content {
+    display: flex;
+    gap: 1em;
+  }
+  .footer__content .footer__content__item {
+    margin: 0;
+    width: 60%;
+  }
+  .footer__content .is-longer {
+    width: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  .main .container {
+    display: flex;
+    gap: 5em;
+  }
+
+  .main__aside {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

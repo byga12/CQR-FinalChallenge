@@ -1,0 +1,173 @@
+// VARIABLES
+$dark-grey: #2E323F   
+$mid-grey: #3B4050
+$light-grey: #6F737F
+$white : #FFF
+$mid-white: #DDD
+$golden : #A59678
+
+// NORMALIZE
+*, *:after, *:before
+    box-sizing: border-box
+
+body, h1, h2, h3
+    margin: 0
+    padding: 0
+    font-family: 'Oswald', sans-serif    
+body
+    font-family: 'Montserrat', sans-serif
+    color: $mid-grey
+img
+    max-width: 100%
+ul 
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+
+// MOBILE-FIRST STYLES
+
+.container
+    width: 80%
+    max-width: 1200px
+    margin: 0 auto
+    padding: 5vw 0
+
+
+.nav
+    background: $dark-grey
+    color: $mid-white
+    font-weight: bold
+    .container
+        padding: .8rem 0
+.nav__logo
+    text-align: center
+.nav__pages
+    margin: 1.3rem
+    white-space: nowrap
+    text-align: center
+    font-family: 'Oswald', sans-serif   
+    li
+        margin: .5rem 
+
+
+
+.hero
+    background: $mid-grey
+    color: $mid-white
+.hero__title
+    font-size: 4rem
+    line-height: 4rem
+    margin: .5em 0
+.hero__content 
+    font-size: 1.3rem
+.hero__description
+    margin-bottom: 2em     
+    
+
+
+.features
+    background: $mid-white
+
+
+
+.main
+    background: $white
+.main__aside__item
+    margin: 2rem 0
+    padding: 2rem
+    text-align: center
+    color: $mid-white
+    background: #3B4050
+
+
+
+
+
+
+
+.footer
+    background: $mid-grey
+    color: $mid-white
+.footer__title
+    font-size: 3rem
+    line-height: 1em
+    margin: .7em 0
+.footer__content__item
+    font-family: 'Montserrat', sans-serif
+    margin: 3em 0
+    h3
+        margin: 1em 0
+        color: $golden
+    li 
+        margin: 1em 0   
+
+
+
+
+
+// MODIFIERS
+
+.is-highlighted
+    font-family: 'Oswald', sans-serif  
+    font-weight: bold
+    display: inline
+    background: $golden
+    padding: .2em 1.3em 
+    border-radius: 100px
+
+
+.is-golden
+    color: $golden
+
+
+// @media queries DESKTOP-ORIENTED
+
+@media (min-width: 700px) 
+    .flex
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 3em
+    .nav__pages
+        margin: 0
+
+    .hero
+        .flex
+            gap: 2rem
+        .hero__title
+            font-size: 5.625rem
+            line-height: 1em
+            width: 50%
+        .hero__content
+            width: 40%
+
+    .features__item
+        text-align: center
+
+
+    .main__aside
+        display: flex
+        gap: 1em
+
+
+    .footer__title
+        text-align: center
+    .footer__content
+        display: flex
+        gap: 1em
+        .footer__content__item
+            margin: 0
+            width: 60%    
+        .is-longer
+            width: 100%
+    
+
+
+@media (min-width: 1000px) 
+    .main .container
+        display: flex
+        gap: 5em
+
+    .main__aside
+        display: block
